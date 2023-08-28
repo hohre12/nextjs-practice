@@ -1,7 +1,8 @@
 import Link from "next/link"
 import Image from 'next/image'
 
-export default function Header() {
+type Props = {};
+function Header({}: Props) {
     return (
         <header>
             <Link href="/">
@@ -11,19 +12,21 @@ export default function Header() {
                 <Link href="/service">
                     주요기능
                 </Link>
-                <Link href="/service">
+                <Link href="/price">
                     요금안내
                 </Link>
-                <Link href="/service">
+                <Link href="/voucher">
                     비대면바우처
                 </Link>
-                <Link href="/service">
+                <Link href="/survey">
                     전수조사
                 </Link>
-                <Link href="/service">
+                <Link href="/blog">
                     블로그
                 </Link>
             </nav>
         </header>
     )
 }
+
+export default Header;
