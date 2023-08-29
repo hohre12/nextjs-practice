@@ -1,0 +1,64 @@
+// todo: global
+
+.btnPrimary {
+    background-color: #fff;
+    border-radius: 5px;
+    border: 1px solid #fec741;
+    color: #fec741;
+    font-weight: 700;
+    display: inline-block;
+    padding: 5px 10px;
+}
+
+.btnYellow {
+    background-color: #fec741;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 700;
+    display: inline-flex;
+    align-items: center;
+    transition: all 0.5s;
+    padding: 5px 10px;
+}
+
+// - header
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    transition: all 0.5s;
+}
+
+.wrap {
+    height: 100px;
+    width: 1280px;
+    margin: 0 auto;
+    &.flex {
+        display: flex;
+        align-items: center;
+    }
+    .nav {
+        margin-left: auto;
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 0;
+        margin-bottom: 0;
+        list-style: none;
+        .menu {
+            margin: 0 40px;
+            display: flex;
+            gap: 40px;
+            line-height: 40px;
+        }
+        .buttonWrap {
+            display: flex;
+            gap: 30px;
+            .btnPrimary {
+                padding: 5px 25px;
+            }
+            .btnYellow {
+                padding: 5px 50px;
+            }
+        }
+    }
+}
